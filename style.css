@@ -1,7 +1,58 @@
 * {
     margin: 0;
     padding: 0;
-    color: #A80532;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #003876;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #000000;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: #BE0028;
+
+}
+
+.nav {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 20px;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1000;
+}
+
+.nav a {
+    text-decoration: none;      /* ← Removes the underline */
+    color: #2d2d2d;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #fafafa;             /* ← Changes color on hover instead of underline */
+}
+
+.nav a.active {
+    color: #ffffff;             /* ← Highlights the current page */
+}
+
+.logo {
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.hero {
+    
 }
