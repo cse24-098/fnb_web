@@ -1,45 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
-  <title>FNB Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Absa Bank</title>
 </head>
 <body>
-  <header class="header">
+    <!-- ========================================== -->
+    <!-- HEADER                                    -->
+    <!-- ========================================== -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/absa_logo.png" alt="Absa Logo">
+                </a>
+            </div>
 
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/absa_logo.png" alt="Absa Logo">
-        </a>
-    </div>
+            <nav class="nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#" class="nav-cta">Open Account</a>
+            </nav>
+        </div>
+    </header>
 
-    <nav class="nav">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-  </header>
+    <!-- ========================================== -->
+    <!-- HERO SECTION                              -->
+    <!-- ========================================== -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="images/banner.jpg" alt="Absa Banner Image">
+        </div>
+        <div class="hero-content">
+            <h1>Your financial partner for life</h1>
+            <p>Banking solutions designed to help you grow, save, and achieve your goals.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">Get Started</a>
+                <a href="#" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-  <section class="hero">
-    <div>
-        <img src="images/absa_banner.webp" alt="Absa Banner Image">
-    </div>
-  </section>
+    <!-- ========================================== -->
+    <!-- FEATURES SECTION                          -->
+    <!-- ========================================== -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Bank With Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Banking</h3>
+                    <p>Your money and data are protected with industry-leading security.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Banking</h3>
+                    <p>Bank anytime, anywhere with our easy-to-use mobile app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support team is always ready to help you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
+    <!-- ========================================== -->
+    <!-- ACCOUNT OVERVIEW                         -->
+    <!-- ========================================== -->
+    <section class="account-overview">
+        <div class="container">
+            <div class="account-card">
+                <div class="account-balance">
+                    <p class="balance-label">Your Balance</p>
+                    <h2 class="balance-amount">P 12,450.00</h2>
+                    <p class="balance-account">Account: **** 4532</p>
+                </div>
+                <div class="account-actions">
+                    <button class="action-btn"><i class="fas fa-arrow-up"></i> Transfer</button>
+                    <button class="action-btn"><i class="fas fa-arrow-down"></i> Receive</button>
+                    <button class="action-btn"><i class="fas fa-file-invoice"></i> Pay</button>
+                    <button class="action-btn"><i class="fas fa-plus-circle"></i> Deposit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- RECENT TRANSACTIONS                      -->
+    <!-- ========================================== -->
+    <section class="transactions">
+        <div class="container">
+            <div class="transactions-header">
+                <h2>Recent Transactions</h2>
+                <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="transactions-list">
+                <div class="transaction-item">
+                    <div class="transaction-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <div class="transaction-info">
+                        <h4>Supermarket</h4>
+                        <p>Groceries & household items</p>
+                    </div>
+                    <div class="transaction-amount negative">- P 450.00</div>
+                    <div class="transaction-time">2 hours ago</div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon"><i class="fas fa-gas-pump"></i></div>
+                    <div class="transaction-info">
+                        <h4>Fuel Station</h4>
+                        <p>Petrol fill-up</p>
+                    </div>
+                    <div class="transaction-amount negative">- P 120.00</div>
+                    <div class="transaction-time">5 hours ago</div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="transaction-info">
+                        <h4>Mobile Recharge</h4>
+                        <p>Prepaid airtime</p>
+                    </div>
+                    <div class="transaction-amount negative">- P 89.00</div>
+                    <div class="transaction-time">1 day ago</div>
+                </div>
+                <div class="transaction-item">
+                    <div class="transaction-icon"><i class="fas fa-wallet"></i></div>
+                    <div class="transaction-info">
+                        <h4>Salary Deposit</h4>
+                        <p>Monthly payroll</p>
+                    </div>
+                    <div class="transaction-amount positive">+ P 8,500.00</div>
+                    <div class="transaction-time">3 days ago</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                    -->
+    <!-- ========================================== -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2026 Powered by Kamogelo Morerwa.</p>
                 <div class="social-links">
                     <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
