@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="profile.css" rel="stylesheet">
+    <title>Profile Settings - Absa Bank</title>
+</head>
+<body>
+    <!-- ========================================== -->
+    <!-- HEADER                                    -->
+    <!-- ========================================== -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/absa_logo.png" alt="Absa Logo">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="transactions.html">Transactions</a>
+                <a href="profile.html" class="active">Profile</a>
+                <a href="index.html" class="nav-cta">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- PROFILE SETTINGS                          -->
+    <!-- ========================================== -->
+    <main class="profile-page">
+        <div class="container">
+            <h1 class="page-title">Profile Settings</h1>
+            <p class="page-subtitle">Manage your personal information and security settings</p>
+
+            <!-- Profile Grid -->
+            <div class="profile-grid">
+                <!-- Sidebar -->
+                <aside class="profile-sidebar">
+                    <div class="profile-avatar">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Profile Photo">
+                        <button class="change-photo-btn"><i class="fas fa-camera"></i></button>
+                    </div>
+                    <h3>Kamogelo Morerwa</h3>
+                    <p class="profile-email">kamogelo@email.com</p>
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Active
+                    </div>
+
+                    <nav class="profile-nav">
+                        <a href="#" class="active"><i class="fas fa-user"></i> Personal Info</a>
+                        <a href="#"><i class="fas fa-lock"></i> Security</a>
+                        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+                        <a href="#"><i class="fas fa-credit-card"></i> Linked Accounts</a>
+                        <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                    </nav>
+                </aside>
+
+                <!-- Main Content -->
+                <section class="profile-content">
+                    <!-- Personal Information -->
+                    <div class="profile-section">
+                        <h2>Personal Information</h2>
+                        <form class="profile-form" id="profileForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" value="Kamogelo" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" value="Morerwa" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" value="kamogelo@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" value="+267 71 234 567">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" id="dob" value="2000-01-01">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select id="gender">
+                                        <option>Male</option>
+                                        <option selected>Female</option>
+                                        <option>Other</option>
+                                        <option>Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" value="123 Main Street, Gaborone, Botswana">
+                            </div>
+
+                            <button type="submit" class="save-btn">
+                                <i class="fas fa-save"></i> Save Changes
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Security Section -->
+                    <div class="profile-section">
+                        <h2>Security</h2>
+                        <div class="security-item">
+                            <div class="security-info">
+                                <i class="fas fa-key"></i>
+                                <div>
+                                    <h4>Change Password</h4>
+                                    <p>Update your password regularly to keep your account secure</p>
+                                </div>
+                            </div>
+                            <button class="security-btn" id="changePasswordBtn">Change</button>
+                        </div>
+
+                        <div class="security-item">
+                            <div class="security-info">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div>
+                                    <h4>Two-Factor Authentication</h4>
+                                    <p>Add an extra layer of security to your account</p>
+                                </div>
+                            </div>
+                            <button class="security-btn" id="twoFactorBtn">Enable</button>
+                        </div>
+
+                        <div class="security-item">
+                            <div class="security-info">
+                                <i class="fas fa-history"></i>
+                                <div>
+                                    <h4>Recent Login Activity</h4>
+                                    <p>Check where your account has been accessed from</p>
+                                </div>
+                            </div>
+                            <button class="security-btn" id="activityBtn">View</button>
+                        </div>
+                    </div>
+
+                    <!-- Danger Zone -->
+                    <div class="profile-section danger-zone">
+                        <h2><i class="fas fa-exclamation-triangle" style="color: #dc3545;"></i> Danger Zone</h2>
+                        <div class="danger-item">
+                            <div>
+                                <h4>Deactivate Account</h4>
+                                <p>Once you deactivate your account, you will lose access to all your data.</p>
+                            </div>
+                            <button class="danger-btn" id="deactivateBtn">Deactivate</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- FOOTER                                    -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Powered by Kamogelo Morerwa.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
